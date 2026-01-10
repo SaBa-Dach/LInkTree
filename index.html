@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nightfall_pvp_</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 680px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            margin: 0 auto 24px;
+            object-fit: cover;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        .username {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            letter-spacing: 0.5px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .link-button {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            padding: 18px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: block;
+        }
+
+        .link-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .link-button:active {
+            transform: translateY(0);
+        }
+
+        /* Edit mode styles */
+        .edit-notice {
+            background: rgba(255, 215, 0, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            color: #ffd700;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+
+        <img src="images/Screenshot_2026-01-10-16-52-20-165_com.zhiliaoapp.musically-edit-removebg-preview.png" alt="" class="profile-image" id="profileImage">
+        
+        <div class="username">nightfall_pvp_</div>
+        
+        <div class="links">
+            <a href="https://www.roblox.com/share?code=a080d326dc3efc4cb36a508a4ea3cdaf&type=Server" class="link-button" id="link1" target="_blank">Join Private server - Jailbreak</a>
+            <a href="https://www.kisa.ge/donate/Night" class="link-button" id="link2" target="_blank">kisa - Donation</a>
+            <a href="https://bloxdrop.com/r/inbo" class="link-button" id="link3" target="_blank">Free RBX</a>
+        </div>
+    </div>
+
+    <script>
+        // Load the uploaded image
+        const profileImg = document.getElementById('profileImage');
+        // Replace this with your actual image URL or use the one uploaded
+        profileImg.src = 'images/Screenshot_2026-01-10-16-52-20-165_com.zhiliaoapp.musically-edit-removebg-preview.png';
+        
+        // You can edit link URLs and text directly in the HTML above
+        // Change href="#" to your actual links
+        // Change the button text as needed
+    </script>
+</body>
+</html>
